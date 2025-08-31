@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -36,18 +37,16 @@ public class ApiRequest {
         .build(); 
 
         HttpResponse<String> response = httpClient.send(request, BodyHandlers.ofString());
-        //response.body is the string of info, bodyHandlers handle what is retunred in response body
-        //System.out.println(response.body());
+        //response.body is the string of info, bodyHandlers handle what is returned in response body
 
         //Parsing JSON into objects
         ObjectMapper objectMapper = new ObjectMapper();
-        // List<PlayerInfo> playerInfo = objectMapper.readValue(response.body(), new TypeReference<List<PlayerInfo>>() {});
-        
-        // playerInfo.forEach(System.out::println);
+        // PlayerInfo playerInfo = objectMapper.readValue(response.body(), PlayerInfo.class);
+        // System.out.println(playerInfo);
 
        
 
-        //makes output more legible
+        // Json makes output more legible
         Object json = objectMapper.readValue(response.body(), Object.class);
         String prettyJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
         System.out.println(prettyJson);

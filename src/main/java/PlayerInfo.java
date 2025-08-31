@@ -1,46 +1,44 @@
 package src.main.java;
 
+
+import java.util.List;
+
+//If new fields are added to the JSON response that are not in this class, 
+//ignore them during deserialization
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+//Root Object that maps to JSON response
 public class PlayerInfo {
-    private String id;
+    private long id;
     
     private String name;
     
-    private int rating;
+    //private List<Rating> ratings;
 
-    private String char_short;
+    private String platform;
 
-    private String character;
+    private int top_global;
 
-    private int match_count;
-
-    public String getId() {
+    public long getId() {
         return id;
     }
-
 
     public String getName() {
         return name;
     }
 
-    public int getRating() {
-        return rating;
+    // public List<Rating> getRatings() {
+    //     return ratings;
+    // }
+
+    public String getPlatform() {
+        return platform;
     }
 
-    public String getChar_short() {
-        return char_short;
+    public int getTop_global() {
+        return top_global;
     }
-
-    public String getCharacter() {
-        return character;
-    }  
-
-    public int getMatch_count() {
-        return match_count;
-    }
-
-    public String toString() {
-        return "PlayerInfo [id=" + id + ", name=" + name + ", rating=" + rating + ", char_short=" + char_short
-                + ", character=" + character + ", match_count=" + match_count + "]";
-    }
-
 }
+
+
+
