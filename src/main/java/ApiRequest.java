@@ -6,7 +6,9 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.concurrent.CompletableFuture;
 import java.util.Scanner;
+import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
 
 //Learn how to parse JSON in java
 
@@ -37,24 +39,19 @@ public class ApiRequest {
         //response.body is the string of info, bodyHandlers handle what is retunred in response body
         //System.out.println(response.body());
 
-        //Asynchronus response: Runs this while other parts are still running
-        // CompletableFuture<HttpResponse<String>> responseAsync = httpClient.sendAsync(request, BodyHandlers.ofString());
-
-        // responseAsync.thenAccept(res -> System.out.println(res.body()));
-        // responseAsync.join();
-
         //Parsing JSON into objects
         ObjectMapper objectMapper = new ObjectMapper();
-        List<PlayerInfo> playerInfo = objectMapper.readValue(response.body(), new TypeReference<List<PlayerInfo>>() {});
+        // List<PlayerInfo> playerInfo = objectMapper.readValue(response.body(), new TypeReference<List<PlayerInfo>>() {});
         
-        playerInfo.forEach(System.out::println);
+        // playerInfo.forEach(System.out::println);
 
-        //Object json = objectMapper.readValue(response.body(), Object.class);
+       
 
         //makes output more legible
-        // String prettyJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
-        // System.out.println(prettyJson);
+        Object json = objectMapper.readValue(response.body(), Object.class);
+        String prettyJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
+        System.out.println(prettyJson);
 
-
+        scanner.close();
     }
 }
