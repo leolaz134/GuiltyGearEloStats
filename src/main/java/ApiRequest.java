@@ -58,10 +58,14 @@ public class ApiRequest {
         //Gets json data and maps it to a PlayerInfo object and prints out some variables
         PlayerInfo playerInfo = objectMapper.readValue(response.body(), PlayerInfo.class);
         System.out.println("Player Name: " + playerInfo.getName());
-        System.out.println("This User Plays: " + "\n");
+        System.out.println("This User Plays: ");
         List<Ratings> ratings = playerInfo.getRatings();
-        for(Ratings rating : ratings){
-            System.out.println(" Character: " + rating.getCharacter() + " | Rating: " + rating.getRating());
+        for(Ratings rating : ratings){ 
+            if(rating.getRating() > 10000000){
+                System.out.println(" Character: " + rating.getCharacter() + " | Rating: " + (rating.getRating() - 10000000));
+            } else{
+                System.out.println(" Character: " + rating.getCharacter() + " | Rating: " + rating.getRating());
+            }
         }
 
 
