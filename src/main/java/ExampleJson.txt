@@ -1,0 +1,48 @@
+{
+  "id" : 210611072342011231,
+  "name" : "Zando",
+  "ratings" : [ {
+    "rating" : 10001936,
+    "char_short" : "CH",
+    "character" : "Chipp",
+    "match_count" : 820,
+    "top_char" : 1,
+    "top_defeated" : {
+      "timestamp" : "2025-08-31 16:18:58",
+      "id" : 210611160434807812,
+      "name" : "BG Player",
+      "char_short" : "HA",
+      "value" : 10001889
+    },
+    "top_rating" : {
+      "timestamp" : "2025-09-03 21:01:24",
+      "value" : 10001936
+    }
+  }, {
+    "rating" : 43960,
+    "char_short" : "AS",
+    "character" : "Asuka",
+    "match_count" : 30,
+    "top_char" : 66,
+    "top_defeated" : {
+      "timestamp" : "2025-08-30 13:18:13",
+      "id" : 210611103640264025,
+      "name" : "Sendai",
+      "char_short" : "LU",
+      "value" : 44185
+    },
+    "top_rating" : {
+      "timestamp" : "2025-08-30 13:34:02",
+      "value" : 43920
+    }
+  } ],
+  "platform" : "PC",
+  "top_global" : 3,
+  "tags" : [ {
+    "tag" : "UFA '24",
+    "style" : "{\"background\":\"#E0E0E0\", \"color\":\"#2A68CA\"}"
+  }, {
+    "tag" : "Headstomper '23",
+    "style" : "{\"background\":\"#E0E0E0\", \"color\":\"#2A68CA\"}"
+  } ]
+}

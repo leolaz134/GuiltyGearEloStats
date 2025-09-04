@@ -10,7 +10,7 @@ public class PlayerInfo {
     
     private String name;
     
-    private List<Rating> ratings;
+    private List<Ratings> ratings;
 
     private String platform;
 
@@ -24,7 +24,7 @@ public class PlayerInfo {
         return name;
     }
 
-    public List<Rating> getRatings() {
+    public List<Ratings> getRatings() {
         return ratings;
     }
 

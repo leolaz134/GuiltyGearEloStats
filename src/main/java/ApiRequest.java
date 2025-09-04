@@ -5,6 +5,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
+import java.util.List;
 //import java.util.concurrent.CompletableFuture;
 import java.util.Scanner;
 //import java.util.List;
@@ -57,6 +58,12 @@ public class ApiRequest {
         //Gets json data and maps it to a PlayerInfo object and prints out some variables
         PlayerInfo playerInfo = objectMapper.readValue(response.body(), PlayerInfo.class);
         System.out.println("Player Name: " + playerInfo.getName());
+        System.out.println("This User Plays: " + "\n");
+        List<Ratings> ratings = playerInfo.getRatings();
+        for(Ratings rating : ratings){
+            System.out.println(" Character: " + rating.getCharacter() + " | Rating: " + rating.getRating());
+        }
+
 
 
         scanner.close();

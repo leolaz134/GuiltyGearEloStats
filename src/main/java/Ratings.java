@@ -2,7 +2,7 @@
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Rating{
+public class Ratings{
     private int rating;
     
     private String character;
