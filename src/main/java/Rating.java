@@ -1,6 +1,7 @@
 //sub object for rating details
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Rating{
     private int rating;
     

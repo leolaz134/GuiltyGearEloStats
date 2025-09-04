@@ -36,20 +36,28 @@ public class ApiRequest {
         .uri(URI.create(finalURL))
         .build(); 
 
+        //This is done synchronously rather than asynchronously
         HttpResponse<String> response = httpClient.send(request, BodyHandlers.ofString());
         //response.body is the string of info, bodyHandlers handle what is returned in response body
 
         //Parsing JSON into objects
         ObjectMapper objectMapper = new ObjectMapper();
+
+        //Prints out raw json data
         // PlayerInfo playerInfo = objectMapper.readValue(response.body(), PlayerInfo.class);
         // System.out.println(playerInfo);
 
        
 
-        // Json makes output more legible
-        Object json = objectMapper.readValue(response.body(), Object.class);
-        String prettyJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
-        System.out.println(prettyJson);
+        // prints out pretty Json data thats legible
+        // Object json = objectMapper.readValue(response.body(), Object.class);
+        // String prettyJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
+        // System.out.println(prettyJson);
+
+        //Gets json data and maps it to a PlayerInfo object and prints out some variables
+        PlayerInfo playerInfo = objectMapper.readValue(response.body(), PlayerInfo.class);
+        System.out.println("Player Name: " + playerInfo.getName());
+
 
         scanner.close();
     }
