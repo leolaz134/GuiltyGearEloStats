@@ -1,1 +1,1 @@
-A program built in order to tell a player's rating stats with each ranked character within the competetive fighting game of guilty gear strive.
+A program built in order to tell a player's rating stats with each ranked character within the competetive fighting game of guilty gear strive. It also provides a link to the wiki of advice of how to play your character. As of now you need to search your username on puddle.farm and look at the url to get your 18 digit player number.
