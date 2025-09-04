@@ -1,5 +1,4 @@
 //sub object for rating details
-package src.main.java;
 
 
 public class Rating{

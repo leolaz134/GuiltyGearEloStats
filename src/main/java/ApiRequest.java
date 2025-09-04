@@ -1,4 +1,3 @@
-package src.main.java;
 
 import java.io.IOException;
 import java.net.URI;
@@ -6,9 +5,9 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
-import java.util.concurrent.CompletableFuture;
+//import java.util.concurrent.CompletableFuture;
 import java.util.Scanner;
-import java.util.List;
+//import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
 
