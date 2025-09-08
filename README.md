@@ -1,2 +1,5 @@
-A program built in order to tell a player's rating stats for each ranked character within the competitive fighting game of guilty gear strive. You will look onto your R-code in game on the bottom left corner or use 
-puddle.farm to search your username and get your player ID from the URL.
+Want a sway to check your Guilty Gear ranking for each character without sifting through uesr names?
+
+This program is for you! By running this program from the FgcAPI folder with the pom.xml and running --- in your terminal, you'll be prompted to type your Guilty Gear R-Code
+
+Look in-game for your R-code in the bottom right corner of your profile and WHAM, watch your elo be displayed in it's full glory!
