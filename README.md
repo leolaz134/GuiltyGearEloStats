@@ -1,5 +1,5 @@
 <img
-  src="https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn"
+  src="[https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn](https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn&fontColor=00FF0)"
   alt="Guilty Gear Elo Stats"
   height="300"
   />
