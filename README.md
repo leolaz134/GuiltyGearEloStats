@@ -1,4 +1,4 @@
-https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn
+[https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn](https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn)
 
 Want a way to check your Guilty Gear ranking for each character without sifting through many user names?
 
