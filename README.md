@@ -1,3 +1,5 @@
+https://capsule-render.vercel.app/api?type=wave&height=300&color=gradient&text=Guilty%20Gear%20Elo%20Stats&animation=fadeIn
+
 Want a way to check your Guilty Gear ranking for each character without sifting through many user names?
 
 This program is for you! By running this program from the FgcAPI folder (The same folder that contains the pom.xml file) and running mvn exec:java "-Dexec.mainClass=ApiRequest" 
