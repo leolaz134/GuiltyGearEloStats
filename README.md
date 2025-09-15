@@ -13,3 +13,9 @@ By running this program from the FgcAPI folder (The same folder that contains th
 in your terminal, you'll be prompted to type your Guilty Gear R-Code
 
 Look in-game for your R-code in the bottom left corner of your profile, copy paste or type the code, and watch your elo be displayed in it's full glory!
+
+
+Author:
+Leonardo Lazarevic
+
+Bachelor of Science in Computer Science, Emory University
