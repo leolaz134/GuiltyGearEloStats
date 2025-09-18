@@ -6,14 +6,9 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
-//import java.util.concurrent.CompletableFuture;
 import java.util.Scanner;
-//import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
-
-//Learn how to parse JSON in java
-
 //mvn exec:java "-Dexec.mainClass=ApiRequest" (Do this command to run the code)
 //Use 210611072342011231 to test (This is Zando's ID)
 
@@ -47,8 +42,6 @@ public class ApiRequest {
         //Prints out raw json data
         // PlayerInfo playerInfo = objectMapper.readValue(response.body(), PlayerInfo.class);
         // System.out.println(playerInfo);
-
-       
 
         // prints out pretty Json data thats legible
         // Object json = objectMapper.readValue(response.body(), Object.class);
